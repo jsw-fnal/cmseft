@@ -17,6 +17,7 @@ if [ ! -d CMSSW_13_0_14 ]; then
   git cms-addpkg PhysicsTools/NanoAOD
   cd PhysicsTools/NanoAOD/
   git remote add eftfit https://github.com/jsw-fnal/cmssw.git
+  git fetch eftfit
   git checkout eftfit/feature/MadJaxEFTweight
 
   cd ../../
